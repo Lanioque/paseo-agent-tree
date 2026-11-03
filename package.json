@@ -1,0 +1,47 @@
+{
+  "name": "paseo-agent-tree",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Paseo plugin: live tree of every Claude Code workflow, subagent and background task an agent runs, with status, current step and tokens.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lanioque/paseo-agent-tree.git"
+  },
+  "keywords": [
+    "paseo",
+    "paseo-plugin",
+    "claude-code",
+    "subagents",
+    "workflows"
+  ],
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "OVERVIEW.*.md",
+    "index.client.ts",
+    "index.client.tsx",
+    "index.server.ts",
+    "index.server.tsx",
+    "client/",
+    "server/",
+    "shared/",
+    "assets/"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "compile-check": "ELECTRON_RUN_AS_NODE=1 '/Applications/Paseo.app/Contents/Frameworks/Paseo Helper.app/Contents/MacOS/Paseo Helper' scripts/compile-check.mjs"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.14.0",
+    "@tanstack/react-query": "^5.90.11",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3",
+    "@types/node": "^24.19.2",
+    "vitest": "^3.2.7"
+  }
+}

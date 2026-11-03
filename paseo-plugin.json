@@ -1,0 +1,12 @@
+{
+  "id": "paseo-agent-tree",
+  "media": [
+    "assets/preview-sidebar-dark.png",
+    "assets/preview-expanded-dark.png"
+  ],
+  "requirements": {
+    "paseo": ">=0.14.0"
+  },
+  "name": "Agent tree",
+  "description": "Live tree of every Claude Code subagent, workflow agent and background task a Paseo agent runs: phase, current step, status and tokens."
+}
